@@ -1,8 +1,4 @@
-server:
-    port: 8081
 spring:
-    application:
-        name: webapp-service
     main:
         allow-bean-definition-overriding: true
     datasource:
@@ -17,5 +13,17 @@ spring:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
                 temp:
                     use_jdbc_metadata_defaults: false
-    thymeleaf:
-        cache: false
+                    
+security:
+    basic:
+        enabled: false
+    oauth2:
+        resource:
+            userInfoUri: http://localhost:8089/uaa/user
+            ssoLogoutUri: http://localhost:8089/uaa/ssoLogout
+            tokenInvalidateUri: http://uaa-service/uaa/invalidateToken
+            
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/    
