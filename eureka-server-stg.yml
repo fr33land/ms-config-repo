@@ -4,7 +4,7 @@ server:
 spring:
     cloud:
         config:
-            uri: http://localhost:8888    
+            uri: http://ms-config-server:8888    
 eureka:
     instance:
         hostname: localhost

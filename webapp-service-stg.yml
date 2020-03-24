@@ -1,0 +1,11 @@
+server:
+    port: 8081
+    
+security:
+    oauth2:
+        client:
+            clientId: web-app
+            clientSecret: web-app
+            accessTokenUri: http://ms-oauth-server:8089/uaa/oauth/token
+            userAuthorizationUri: http://ms-oauth-server:8089/uaa/oauth/authorize
+            registered-redirect-uri: http://ms-webapp-service:8081/dashboard

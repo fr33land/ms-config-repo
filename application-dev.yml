@@ -19,9 +19,9 @@ security:
         resource:
             userInfoUri: http://localhost:8089/uaa/user
             ssoLogoutUri: http://localhost:8089/uaa/ssoLogout
-            tokenInvalidateUri: http://uaa-service/uaa/invalidateToken
+            tokenInvalidateUri: http://localhost:8089/uaa/invalidateToken
             
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://ms-eureka-server:8761/eureka/    
+            defaultZone: http://localhost:8761/eureka/    
