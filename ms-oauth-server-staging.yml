@@ -1,0 +1,12 @@
+spring:
+    thymeleaf:
+        cache: false  
+       
+security:
+    basic:    
+        enabled: false
+        
+keystore:
+    jks: jwtkey.jks
+    keyname: jwtkey
+    password: aaaaaa       
