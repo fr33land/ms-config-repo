@@ -1,17 +1,13 @@
 server:
     port: 8761
-    
-spring:
-    cloud:
-        config:
-            uri: http://ms-config-server:8888    
+
 eureka:
     instance:
         hostname: localhost
         preferIpAddress: true
-        registryFetchIntervalSeconds: 1
-        leaseRenewalIntervalInSeconds: 2
-        leaseExpirationDurationInSeconds: 5
+        registryFetchIntervalSeconds: 3
+        leaseRenewalIntervalInSeconds: 5
+        leaseExpirationDurationInSeconds: 10
     server:
         eviction-interval-timer-in-ms: 5000
     client:
