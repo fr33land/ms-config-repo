@@ -1,4 +1,5 @@
 server:
+    port: 8089
     servlet:
         context-path: /uaa
         
