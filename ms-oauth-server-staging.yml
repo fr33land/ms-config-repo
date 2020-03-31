@@ -13,7 +13,7 @@ spring:
     mail:
         host: smtp.gmail.com
         port: 587
-        username: freeland.rokas@gmail.com
+        username: ${{ EMAIL_SERVER_USERNAME }}
         password: ${{ EMAIL_SERVER_PASSWORD }}
         default-encoding: UTF-8
         properties:
