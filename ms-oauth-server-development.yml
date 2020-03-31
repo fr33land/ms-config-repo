@@ -6,11 +6,15 @@ server:
 spring:
     thymeleaf:
         cache: false  
+       
+spring:
+    thymeleaf:
+        cache: false  
     mail:
         host: smtp.gmail.com
         port: 587
-        username: freeland.rokas@gmail.com
-        password: xxxxxxx
+        username: ${{ EMAIL_SERVER_USERNAME }}
+        password: ${{ EMAIL_SERVER_PASSWORD }}
         default-encoding: UTF-8
         properties:
             mail:
@@ -18,18 +22,14 @@ spring:
                     auth: true
                     starttls:
                         enable: true
-                        
-security:
-    basic:    
-        enabled: false
         
 keystore:
     jks: jwtkey.jks
     keyname: jwtkey
-    password: aaaaaa        
-        
+    password: aaaaaa   
+    
 google:
     recaptcha:
         key:
-            site: 6LdipIkUAAAAAPJomQ796W15djLMc8zR_WnVEOlp
-            secret: 6LdipIkUAAAAAFORvNfm3CwUT8SYDnC_-dy-WDqt
+            site: ${{ GOOLE_RECAPTCHA_KEY_SITE }}
+            secret: ${{ GOOLE_RECAPTCHA_KEY_SECRET }}
