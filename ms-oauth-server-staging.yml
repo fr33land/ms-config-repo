@@ -4,6 +4,8 @@ server:
         context-path: /uaa
        
 spring:
+    application:
+        email: ${{ EMAIL_SERVER_USERNAME }}
     thymeleaf:
         cache: false  
     mail:
