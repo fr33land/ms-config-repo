@@ -14,7 +14,7 @@ spring:
         host: smtp.gmail.com
         port: 587
         username: freeland.rokas@gmail.com
-        password: oks1d4as
+        password: ${{ EMAIL_SERVER_PASSWORD }}
         default-encoding: UTF-8
         properties:
             mail:
@@ -31,5 +31,5 @@ keystore:
 google:
     recaptcha:
         key:
-            site: 6LdipIkUAAAAAPJomQ796W15djLMc8zR_WnVEOlp
-            secret: 6LdipIkUAAAAAFORvNfm3CwUT8SYDnC_-dy-WDqt
+            site: ${{ GOOLE_RECAPTCHA_KEY_SITE }}
+            secret: ${{ GOOLE_RECAPTCHA_KEY_SECRET }}
