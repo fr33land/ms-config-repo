@@ -10,7 +10,7 @@ spring:
         host: smtp.gmail.com
         port: 587
         username: freeland.rokas@gmail.com
-        password: oks1d4as
+        password: xxxxxxx
         default-encoding: UTF-8
         properties:
             mail:
