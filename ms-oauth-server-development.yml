@@ -2,10 +2,6 @@ server:
     port: 8089
     servlet:
         context-path: /uaa
-        
-spring:
-    thymeleaf:
-        cache: false  
        
 spring:
     thymeleaf:
