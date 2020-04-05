@@ -29,5 +29,5 @@ keystore:
 google:
     recaptcha:
         key:
-            site: ${{ GOOLE_RECAPTCHA_KEY_SITE }}
-            secret: ${{ GOOLE_RECAPTCHA_KEY_SECRET }}
+            site: ${GOOLE_RECAPTCHA_KEY_SITE}
+            secret: ${GOOLE_RECAPTCHA_KEY_SECRET}
