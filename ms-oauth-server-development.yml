@@ -5,7 +5,7 @@ server:
        
 spring:
     application:
-        email: ${{ EMAIL_SERVER_USERNAME }}
+        email: ${EMAIL_SERVER_USERNAME}
     thymeleaf:
         cache: false  
     mail:
