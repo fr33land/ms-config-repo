@@ -11,8 +11,8 @@ spring:
     mail:
         host: smtp.gmail.com
         port: 587
-        username: ${{ EMAIL_SERVER_USERNAME }}
-        password: ${{ EMAIL_SERVER_PASSWORD }}
+        username: ${EMAIL_SERVER_USERNAME}
+        password: ${EMAIL_SERVER_PASSWORD}
         default-encoding: UTF-8
         properties:
             mail:
