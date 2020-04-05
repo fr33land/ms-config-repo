@@ -5,14 +5,14 @@ server:
        
 spring:
     application:
-        email: ${{ EMAIL_SERVER_USERNAME }}
+        email: ${EMAIL_SERVER_USERNAME}
     thymeleaf:
         cache: false  
     mail:
         host: smtp.gmail.com
         port: 587
-        username: ${{ EMAIL_SERVER_USERNAME }}
-        password: ${{ EMAIL_SERVER_PASSWORD }}
+        username: ${EMAIL_SERVER_USERNAME}
+        password: ${EMAIL_SERVER_PASSWORD}
         default-encoding: UTF-8
         properties:
             mail:
